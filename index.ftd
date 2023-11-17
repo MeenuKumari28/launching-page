@@ -55,7 +55,9 @@ ftd.image-src icon:
 -- ftd.image:
 src: $foods.icon
 width.fixed.px: 48
+width.fixed.px if { ftd.device == "mobile" }: 38
 height.fixed.px: 48
+height.fixed.px if { ftd.device == "mobile" }: 38
 
 -- end: foods
 
@@ -73,6 +75,7 @@ caption title:
 
 -- ftd.column:
 width.fixed.px: 1440
+width if { ftd.device == "mobile" }: fill-container
 padding-horizontal.px: 48
 align-content: center
 align-self: center

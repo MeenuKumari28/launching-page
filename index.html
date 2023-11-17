@@ -344,18 +344,18 @@ padding-bottom: 3px;
 .__jc-9 { justify-content: center; }
 .__ali-10 { align-items: center; }
 .__g-11 { gap: 12px; }
-.__w-12 { width: 48px; }
-.__h-13 { height: 48px; }
-.__w-14 { width: 48px; }
-.__h-15 { height: 48px; }
-.__w-16 { width: 48px; }
-.__h-17 { height: 48px; }
-.__w-18 { width: 48px; }
-.__h-19 { height: 48px; }
-.__w-20 { width: 48px; }
-.__h-21 { height: 48px; }
-.__w-22 { width: 48px; }
-.__h-23 { height: 48px; }
+.__w-12 { width: 38px; }
+.__h-13 { height: 38px; }
+.__w-14 { width: 38px; }
+.__h-15 { height: 38px; }
+.__w-16 { width: 38px; }
+.__h-17 { height: 38px; }
+.__w-18 { width: 38px; }
+.__h-19 { height: 38px; }
+.__w-20 { width: 38px; }
+.__h-21 { height: 38px; }
+.__w-22 { width: 38px; }
+.__h-23 { height: 38px; }
 .__rl-24 {  font-family: sans-serif; font-size: 24px; font-weight: 400; line-height: 31px; }
 body.mobile .__rl-24 {  font-family: sans-serif; font-size: 22px; font-weight: 400; line-height: 29px; }
 .__c-25 { color: #141414 !important; }
@@ -364,7 +364,7 @@ body.dark .__c-25 { color: #ffffff !important; }
 body.dark  .__c-25:visited { color: #ffffff !important; }
 .__fwt-26 { font-weight: 300; }
 .__as-27 { align-self: center; }
-.__w-28 { width: 1440px; }
+.__w-28 { width: 100%; }
 .__pl-29 { padding-left: 48px; }
 .__pr-30 { padding-right: 48px; }
 .__pt-31 { padding-top: 12px; }
@@ -410,8 +410,26 @@ inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
 __args__ = fastn_utils.getArgs(__args__, args);
 let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Image);
 parenti0.setProperty(fastn_dom.PropertyKind.ImageSrc, __args__.icon, inherited);
-parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(48)), inherited);
-parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(48)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([ftd.device], function () {
+if (function () {
+return (fastn_utils.getter(ftd.device) == "mobile");
+}()) {
+return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(38));
+} else {
+return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(48));
+}
+}
+), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Height, fastn.formula([ftd.device], function () {
+if (function () {
+return (fastn_utils.getter(ftd.device) == "mobile");
+}()) {
+return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(38));
+} else {
+return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(48));
+}
+}
+), inherited);
 return parenti0;
 } finally {
 __fastn_package_name__ = __fastn_super_package_name__;
@@ -515,7 +533,16 @@ inherited = fastn_utils.getInheritedValues(__args__, inherited, args);
 __args__ = fastn_utils.getArgs(__args__, args);
 let parenti0 = fastn_dom.createKernel(parent, fastn_dom.ElementKind.Column);
 parenti0.setProperty(fastn_dom.PropertyKind.AlignSelf, fastn_dom.AlignSelf.Center, inherited);
-parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(1440)), inherited);
+parenti0.setProperty(fastn_dom.PropertyKind.Width, fastn.formula([ftd.device], function () {
+if (function () {
+return (fastn_utils.getter(ftd.device) == "mobile");
+}()) {
+return fastn_dom.Resizing.FillContainer;
+} else {
+return fastn_dom.Resizing.Fixed(fastn_dom.Length.Px(1440));
+}
+}
+), inherited);
 parenti0.setProperty(fastn_dom.PropertyKind.PaddingHorizontal, fastn_dom.Length.Px(48), inherited);
 parenti0.setProperty(fastn_dom.PropertyKind.PaddingTop, fastn_dom.Length.Px(12), inherited);
 parenti0.setProperty(fastn_dom.PropertyKind.PaddingBottom, fastn_dom.Length.Px(28), inherited);
