@@ -33,7 +33,7 @@ icon: $obj.icon
 
 -- ftd.text: $launching-page.title
 role: $inherited.types.heading-small
-color: $inherited.colors.text-strong
+color: $text-strong
 style: light
 
 -- end: ftd.column
@@ -86,7 +86,7 @@ padding-bottom.px: 28
 
 -- ftd.text: $footer.title
 role: $inherited.types.copy-small
-color: $inherited.colors.text-strong
+color: $text-strong
 style: light
 
 -- end: ftd.column
@@ -127,3 +127,12 @@ icon: $assets.files.assets.icon-5.png
 icon: $assets.files.assets.icon-6.png
 
 -- end: food-icon
+
+
+
+
+
+
+-- ftd.color text-strong:
+light: #000000
+dark: #ffffff

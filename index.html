@@ -358,9 +358,9 @@ padding-bottom: 3px;
 .__h-23 { height: 38px; }
 .__rl-24 {  font-family: sans-serif; font-size: 24px; font-weight: 400; line-height: 31px; }
 body.mobile .__rl-24 {  font-family: sans-serif; font-size: 22px; font-weight: 400; line-height: 29px; }
-.__c-25 { color: #141414 !important; }
+.__c-25 { color: #000000 !important; }
 body.dark .__c-25 { color: #ffffff !important; }
-.__c-25:visited { color: #141414 !important; }
+.__c-25:visited { color: #000000 !important; }
 body.dark  .__c-25:visited { color: #ffffff !important; }
 .__fwt-26 { font-weight: 300; }
 .__as-27 { align-self: center; }
@@ -375,9 +375,9 @@ body.dark  .__c-25:visited { color: #ffffff !important; }
 .__ali-36 { align-items: center; }
 .__rl-37 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 24px; }
 body.mobile .__rl-37 {  font-family: sans-serif; font-size: 12px; font-weight: 400; line-height: 16px; }
-.__c-38 { color: #141414 !important; }
+.__c-38 { color: #000000 !important; }
 body.dark .__c-38 { color: #ffffff !important; }
-.__c-38:visited { color: #141414 !important; }
+.__c-38:visited { color: #000000 !important; }
 body.dark  .__c-38:visited { color: #ffffff !important; }
 .__fwt-39 { font-weight: 300; }
 </style>
@@ -436,6 +436,10 @@ __fastn_package_name__ = __fastn_super_package_name__;
 }
 }
 global["meenukumari28_github_io_launching_page___foods"] = meenukumari28_github_io_launching_page___foods;
+fastn_utils.createNestedObject(global, "meenukumari28_github_io_launching_page___text_strong", fastn.recordInstance({
+light: "#000000",
+dark: "#ffffff"
+}));
 let meenukumari28_github_io_launching_page___launching_page = function (parent, inherited, args)
 {
 let __fastn_super_package_name__ = __fastn_package_name__;
@@ -470,7 +474,7 @@ function (root, inherited) {
 let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
 rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_small"), inherited);
 rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
-rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, global.meenukumari28_github_io_launching_page___text_strong, inherited);
 rooti0.setProperty(fastn_dom.PropertyKind.TextStyle, fastn.mutableList([fastn_dom.TextStyle.Light]), inherited);
 }
 ]), inherited);
@@ -553,7 +557,7 @@ parenti0.setProperty(fastn_dom.PropertyKind.Children, fastn.mutableList([functio
 let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
 rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("copy_small"), inherited);
 rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
-rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text_strong"), inherited);
+rooti0.setProperty(fastn_dom.PropertyKind.Color, global.meenukumari28_github_io_launching_page___text_strong, inherited);
 rooti0.setProperty(fastn_dom.PropertyKind.TextStyle, fastn.mutableList([fastn_dom.TextStyle.Light]), inherited);
 }
 ]), inherited);
